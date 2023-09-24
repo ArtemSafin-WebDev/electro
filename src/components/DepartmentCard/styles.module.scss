@@ -1,0 +1,61 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  border-radius: 0.2rem;
+  border: 1px solid #eaeaf4;
+  background: white;
+
+  @media (hover: hover) {
+    &:hover {
+      .image {
+        transform: scale(1.04);
+        transition: transform 0.4s ease-out;
+      }
+    }
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  overflow: hidden;
+  backface-visibility: hidden;
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: 54%;
+  }
+}
+
+.image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 0.3rem;
+  padding: 1.6rem;
+  padding-top: 1.2rem;
+}
+
+.code {
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.title {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.6rem;
+}

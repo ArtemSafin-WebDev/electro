@@ -1,0 +1,64 @@
+.user {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: auto;
+  width: 100%;
+  text-align: left;
+
+  @media (hover: hover) {
+    &:hover {
+      .icon {
+        fill: white;
+      }
+    }
+  }
+}
+
+.imageWrapper {
+  width: 3.4rem;
+  height: 3.4rem;
+  flex-shrink: 0;
+  position: relative;
+  border-radius: 0.2rem;
+  overflow: hidden;
+}
+
+.image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  flex-grow: 1;
+  color: #a9a9c2;
+}
+
+.name {
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.role {
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.icon {
+  flex-shrink: 0;
+  width: 2.4rem;
+  height: 2.4rem;
+  transition: fill 0.2s;
+  fill: #a9a9c2;
+}

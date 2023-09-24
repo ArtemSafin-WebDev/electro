@@ -1,0 +1,111 @@
+.textInput {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.2;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #a9a9c2;
+  margin-bottom: 0.6rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  border-radius: 0.2rem;
+  background: #f7f7fe;
+  height: 4rem;
+  font: inherit;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 0 1.8rem;
+  border: 1px solid #f7f7fe;
+  transition: border-color 0.2s, color 0.2s;
+
+  &:focus {
+    border-color: var(--primary-color);
+  }
+
+  &[disabled] {
+    background-color: #eaeaf4;
+    border-color: #a9a9c2;
+  }
+
+  &.hasError {
+    color: var(--red);
+    border-color: var(--red);
+  }
+}
+
+.showPassword {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1.8rem;
+  width: 1.8rem;
+  height: 1.8rem;
+
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: var(--text-color);
+    transition: fill 0.2s;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      svg {
+        fill: var(--primary-color);
+      }
+    }
+  }
+}
+
+.clearInput {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1.8rem;
+  width: 1.8rem;
+  height: 1.8rem;
+
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: var(--text-color);
+    transition: fill 0.2s;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      svg {
+        fill: var(--primary-color);
+      }
+    }
+  }
+}
+
+.validationError {
+  color: var(--red);
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0.6rem;
+}

@@ -1,0 +1,35 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 1.5rem;
+}
+
+.inner {
+  border-radius: 2px;
+  border: 1px solid #eaeaf4;
+  background: white;
+  padding: 2.6rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.heading {
+  font-size: 4.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 4.5rem;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 2rem;
+}
+
+.listItem {
+  display: flex;
+  flex-direction: column;
+}

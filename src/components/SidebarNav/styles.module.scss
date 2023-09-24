@@ -1,0 +1,16 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.listItem {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,68 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+}
+
+.formTitle {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 4rem;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.submit {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.9rem;
+  text-align: center;
+  background-color: var(--primary-color);
+  display: block;
+  padding: 1.5rem 3rem;
+  color: white;
+  width: 100%;
+  margin-top: 3.6rem;
+
+  transition: color 0.2s, background-color 0.2s;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--primary-color-hover);
+    }
+  }
+
+  &:active {
+    background-color: var(--primary-color-hover);
+  }
+
+  &[disabled] {
+    background-color: #eaeaf4;
+    color: #a9a9c2;
+  }
+}
+
+.rememberBtn {
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #a9a9c2;
+  margin-top: 1.4rem;
+  text-align: center;
+  display: block;
+  transition: color 0.2s;
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+}

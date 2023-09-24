@@ -1,0 +1,61 @@
+.signIn {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 48rem;
+  grid-template-areas: "left right";
+  flex-grow: 1;
+}
+
+.leftCol {
+  display: flex;
+  flex-direction: column;
+  grid-area: left;
+  position: relative;
+  z-index: 1;
+  background-color: var(--text-color);
+  color: white;
+  padding: 4rem;
+}
+
+.leftRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.logo {
+  width: 33.2rem;
+  height: auto;
+}
+
+.smallText {
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+  font-style: normal;
+  font-weight: 600;
+  text-align: right;
+}
+
+.rightCol {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  grid-area: right;
+  padding: 8.6rem;
+}
+
+.bgImage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
