@@ -17,7 +17,7 @@ export default function DepartmentsDetails() {
               title="Участок фрезерных ОЦ"
               code="7728937482"
               imageSrc="/images/departments/5.webp"
-              href="/"
+              href="/dashboard/machines"
             />
           </li>
           <li className={styles.listItem} key={6}>
@@ -25,7 +25,7 @@ export default function DepartmentsDetails() {
               title="Участок токарных автоматов"
               code="3929479249"
               imageSrc="/images/departments/6.webp"
-              href="/"
+              href="/dashboard/machines"
             />
           </li>
         </ul>
