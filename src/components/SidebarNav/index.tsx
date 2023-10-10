@@ -27,7 +27,7 @@ export default function SidebarNav() {
     <nav className={styles.nav}>
       <ul className={styles.list}>
         {navStructure.map((item) => (
-          <li className={styles.listItem}>
+          <li className={styles.listItem} key={item.id}>
             <NavAccordion item={item} />
           </li>
         ))}

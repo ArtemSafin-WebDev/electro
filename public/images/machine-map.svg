@@ -1,0 +1,17 @@
+<svg width="1099" height="524" viewBox="0 0 1099 524" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="23.5" y="4.5" width="9" height="287" stroke="#A9A9C2"/>
+<rect x="1083.5" y="4.5" width="10" height="498" stroke="#A9A9C2"/>
+<rect x="1079.5" y="4.5" width="19" height="18" fill="white" stroke="#A9A9C2"/>
+<rect x="1078.5" y="250.5" width="19" height="17" fill="white" stroke="#A9A9C2"/>
+<rect x="1078.5" y="477.5" width="19" height="25" fill="white" stroke="#A9A9C2"/>
+<path d="M1083 1H779V502" stroke="#A9A9C2" stroke-linecap="round" stroke-dasharray="20 6"/>
+<path d="M25 1H701V502" stroke="#A9A9C2" stroke-linecap="round" stroke-dasharray="20 6"/>
+<rect x="22.5" y="502.5" width="1075" height="21" stroke="#A9A9C2"/>
+<rect x="66.5" y="502.5" width="170" height="21" stroke="#A9A9C2"/>
+<rect x="327.5" y="502.5" width="171" height="21" stroke="#A9A9C2"/>
+<rect x="587.5" y="502.5" width="171" height="21" stroke="#A9A9C2"/>
+<rect x="848.5" y="502.5" width="171" height="21" stroke="#A9A9C2"/>
+<rect x="22.5" y="367.5" width="9" height="135" stroke="#A9A9C2"/>
+<path d="M1 341L23 367" stroke="#A9A9C2"/>
+<path d="M1 316L24 291" stroke="#A9A9C2"/>
+</svg>

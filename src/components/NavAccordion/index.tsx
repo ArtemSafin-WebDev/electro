@@ -36,7 +36,7 @@ export default function NavAccordion({ item }: NavAccordionProps) {
         <div className={styles.contentInner}>
           <ul className={styles.submenuList}>
             {item.sectors.map((item) => (
-              <li className={styles.submenuListItem}>
+              <li className={styles.submenuListItem} key={item.id}>
                 <NavSubmenuAccordion
                   item={item}
                   parentOpen={open}

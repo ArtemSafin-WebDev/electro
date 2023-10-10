@@ -1,0 +1,122 @@
+.wrapper {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.panel {
+  display: grid;
+  border-radius: 0.2rem;
+  border: 1px solid #eaeaf4;
+  background: #fff;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-areas: "name name name id brand number" "name name name location location location" "name name name type type type";
+  margin-bottom: 2.2rem;
+}
+
+.nameBlock {
+  grid-area: name;
+  display: flex;
+  flex-direction: column;
+  padding: 1.8rem 2.3rem;
+  border-right: 1px solid #eaeaf4;
+}
+
+.idBlock {
+  grid-area: id;
+  border-right: 1px solid #eaeaf4;
+  border-bottom: 1px solid #eaeaf4;
+}
+
+.brandBlock {
+  border-right: 1px solid #eaeaf4;
+  border-bottom: 1px solid #eaeaf4;
+  grid-area: brand;
+}
+
+.numberBlock {
+  border-bottom: 1px solid #eaeaf4;
+  grid-area: number;
+}
+
+.locationBlock {
+  border-bottom: 1px solid #eaeaf4;
+  grid-area: location;
+}
+
+.typeBlock {
+  grid-area: type;
+}
+
+.heading {
+  color: #a9a9c2;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 1.1rem;
+}
+
+.machineTitle {
+  font-size: 4.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.infoCard {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem 2rem;
+  gap: 0.2rem;
+}
+
+.infoCardKey {
+  color: #a9a9c2;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.infoCardValue {
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.nav {
+  border-radius: 0.2rem;
+  border: 1px solid var(--secondary-grey, #eaeaf4);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0.2rem;
+  margin-bottom: 2rem;
+}
+
+.navLink {
+  display: block;
+  text-align: center;
+  padding: 1rem 2.3rem;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 0.2rem;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.navLinkActive {
+  background: #ff812b;
+  color: white;
+  font-weight: 600;
+  &:link,
+  &:visited {
+    color: white;
+  }
+}
